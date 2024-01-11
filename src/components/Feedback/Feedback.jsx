@@ -5,8 +5,6 @@ import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Notification from './Notification';
 
-import styles from './feedback.module.css';
-
 class Feedback extends Component {
   static feedbackOptions = ['good', 'neutral', 'bad'];
 
@@ -46,7 +44,7 @@ class Feedback extends Component {
     const percentOfPositive = this.countPositiveFeedbackPercentage('good');
 
     return (
-      <div className="wrapper">
+      <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
             feedbackOptions={Feedback.feedbackOptions}
